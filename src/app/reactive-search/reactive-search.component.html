@@ -1,0 +1,7 @@
+<h2>Reactive</h2>
+
+<input type="text" [(ngModel)]="query" (ngModelChange)="search($event)">
+
+<div *ngFor="let item of items$ | async">
+  {{ item }}
+</div>
